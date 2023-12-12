@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling Ledger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-message">Gambling Ledger</h1>
+        <div class="input-field">
+            <label for="casino-name">Casino Name</label>
+            <input type="text" id="casino-name" />
+        </div>
+        <div class="input-field">
+            <label for="date">Date</label>
+            <input type="text" id="date" class="consistent-date" />
+        </div>
+        <div class="input-field-group">
+            <div class="input-field">
+                <label for="free-play">Free Play</label>
+                <input type="text" id="free-play" value="$" pattern="\d*" inputmode="numeric" />
+            </div>
+            <div class="input-field">
+                <label for="free-play-gains">Free Play Gains</label>
+                <input type="text" id="free-play-gains" value="$" pattern="\d*" inputmode="numeric" />
+            </div>
+        </div>
+        <div class="input-field">
+            <label for="bankroll">Bankroll</label>
+            <input type="text" id="bankroll" value="$" pattern="\d*" inputmode="numeric" />
+        </div>
+        <div class="input-field">
+            <label for="jackpot">Jackpot</label>
+            <input type="text" id="jackpot" value="$" pattern="\d*" inputmode="numeric" />
+        </div>
+        <div class="input-field">
+            <label for="walked-out">Walked Out With</label>
+            <input type="text" id="walked-out" value="$" pattern="\d*" inputmode="numeric" />
+        </div>
+        <div class="input-field">
+            <label for="gains">Gains</label>
+            <input type="text" id="gains" value="$0.00" readonly />
+        </div>
+        <div class="input-field">
+            <label for="losses">Losses</label>
+            <input type="text" id="losses" value="$0.00" readonly />
+        </div>
+        <div class="input-field">
+            <label for="comments">Comments</label>
+            <input type="text" id="comments" value="" />
+        </div>
+        <button id="calculate" class="button calculate-button">Calculate</button>
+        <button id="save" class="button save-button">Save</button>
+        <button id="new-entry" class="button new-entry-button">New Entry</button>
+        <button id="undo" class="button undo-button">Undo</button>
+        <button id="reset" class="button reset-button">Reset</button>
+        <button id="download" class="button download-button">Download .csv</button>
+    </div>
+
+    <div class="ledger-container">
+        <div class="ledger center">
+            <div class="ledger-header">
+                <h2>LEDGER</h2>
+            </div>
+          
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Casino Name</th>
+                        <th>Free Play</th>
+                        <th>Free Play Gains</th>
+                        <th>Bankroll</th>
+                        <th>Jackpot</th>
+                        <th>Walked Out With</th>
+                        <th>Gains</th>
+                        <th>Losses</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ledger entries will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+  <div class="ledger-container">
+    <!-- ... (your existing ledger table code) ... -->
+    <div class="center">
+        <p class="donate-paragraph">
+            If you'd like to support my work, please consider donating to my PayPal account: 
+            <a href="https://paypal.me/gamblit" target="_blank">paypal.me/gamblit</a>
+            or through Venmo: 
+            <a href="https://venmo.com/u/gamblit" target="_blank">venmo.com/u/gamblit</a>.
+        </p>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
