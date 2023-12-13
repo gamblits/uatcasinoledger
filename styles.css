@@ -62,12 +62,16 @@ body {
 /* Existing styles... */
 
 /* Adjust the date field size for iPhones or devices with similar widths */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .input-field input[type="date"] {
-        width: 90%;
-        max-width: 250px; /* Adjust the maximum width as needed */
+        width: 100%;
+        max-width: 100%; /* Adjust the maximum width as needed */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
     }
 }
+
+/* Rest of your existing CSS... */
+
 
 .button {
     padding: 12px 24px;
