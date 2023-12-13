@@ -59,6 +59,15 @@ body {
     color: #343a40;
     display: inline-block;
 }
+/* Existing styles... */
+
+/* Adjust the date field size for iPhones or devices with similar widths */
+@media screen and (max-width: 480px) {
+    .input-field input[type="date"] {
+        width: 90%;
+        max-width: 250px; /* Adjust the maximum width as needed */
+    }
+}
 
 .button {
     padding: 12px 24px;
